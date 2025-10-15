@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decantes Mattoir</title>
+<style>
+    :root{
+        --bg:#f6f6f7;
+        --card:#ffffff;
+        --accent:#222;
+        --whatsapp:#25D366;
+    }
+    *{box-sizing:border-box}
+    body { font-family: Arial, Helvetica, sans-serif; margin:0; padding:0; background-color: var(--bg); color:#222;}
+    header { background: linear-gradient(90deg,#111 0%, #2b2b2b 100%); color:#fff; padding:28px 20px; text-align:center;}
+    header h1{ margin:0; font-size:1.9rem; letter-spacing:1px;}
+    header p{ margin:6px 0 0; color:#ddd;}
+    .container{ max-width:1100px; margin:26px auto; padding:0 18px;}
+    .perfume-list{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;}
+    .perfume-card{ background:var(--card); border-radius:12px; overflow:hidden; box-shadow:0 8px 20px rgba(16,24,40,0.08); display:flex; flex-direction:column; align-items:stretch; transition: transform 0.2s;}
+    .perfume-card:hover{ transform: translateY(-5px);}
+    .card-img{ width:100%; height:250px; object-fit:contain; background-color:#fff; display:block;}
+    .card-body{ padding:14px 16px; flex:1; display:flex; flex-direction:column; align-items:center; text-align:center;}
+    .card-body h2{ font-size:1.05rem; margin:6px 0 8px;}
+    .price-row{ display:flex; gap:12px; align-items:center; margin:6px 0 12px; flex-wrap:wrap; justify-content:center;}
+    .price{ background:#f3f4f6; padding:6px 10px; border-radius:8px; font-weight:600;}
+    .btn-whatsapp{ display:inline-block; padding:10px 14px; border-radius:8px; background:var(--whatsapp); color:#fff; text-decoration:none; font-weight:700; transition: background 0.2s;}
+    .btn-whatsapp:hover{ background:#1ebe5d;}
+    .btn-whatsapp.small{ padding:8px 10px; font-size:0.95rem;}
+    footer{ margin-top:32px;}
+    .bottom-footer{ background:#fff; padding:14px 10px; text-align:center; border-top:1px solid #eee; color:#444; font-size:0.95rem;}
+    
+    @media(max-width:768px){ 
+        .card-img{height:200px} 
+        .price-row{flex-direction:column; gap:6px} 
+        header h1{font-size:1.6rem;} 
+        header p{font-size:0.95rem;}
+    }
+    @media(max-width:480px){ 
+        .card-img{height:180px} 
+        .btn-whatsapp{font-size:0.85rem; padding:8px 10px;} 
+        .card-body h2{font-size:1rem;}
+    }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Decantes Mattoir</h1>
+<p>Escolha seu perfume e compre pelo WhatsApp (Mateus)</p>
+</header>
+
+<main class="container">
+<section class="perfume-list">
+
+<!-- Polo Big Pony Blue 1 Masculino -->
+<article class="perfume-card">
+<img class="card-img" src="http://res.cloudinary.com/beleza-na-web/image/upload/w_297,c_lpad,w_600,h_315/g_south_west,l_label-free-shipping,x_10,y_-60,o_0/v1/imagens/product/MP82518/585d392b-3a46-4c1e-8aca-6c24b1343225-ralph-lauren-perfume-the-big-pony-collection-1-for-men-1-7-oz-edt-spray-originaljpg11021609988770263416.jpg" alt="Polo Big Pony Blue 1 Masculino">
+<div class="card-body">
+<h2>Polo Big Pony Blue 1 Masculino</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 11,00</div>
+<div class="price">5 ml: R$ 22,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Polo%20Big%20Pony%20Blue%201%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+<!-- Le Male Le Parfum -->
+<article class="perfume-card">
+<img class="card-img" src="https://fimgs.net/mdimg/perfume/o.61856.jpg" alt="Le Male Le Parfum">
+<div class="card-body">
+<h2>Le Male Le Parfum</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 16,00</div>
+<div class="price">5 ml: R$ 36,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Le%20Male%20Le%20Parfum%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+<!-- Lattafa Khamrah -->
+<article class="perfume-card">
+<img class="card-img" src="https://aromedecapelin.cdn.magazord.com.br/img/2024/01/produto/4528/khamhrah2-f55dcfbca66905373916986779121452-1024-1024.jpeg?ims=fit-in/600x600/filters:fill(fff)" alt="Lattafa Khamrah">
+<div class="card-body">
+<h2>Lattafa Khamrah</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 12,00</div>
+<div class="price">5 ml: R$ 24,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Lattafa%20Khamrah%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+<!-- Essenza Nobile -->
+<article class="perfume-card">
+<img class="card-img" src="https://fimgs.net/mdimg/perfume-thumbs/375x500.105097.jpg" alt="Essenza Nobile">
+<div class="card-body">
+<h2>Essenza Nobile (In The Box)</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 9,00</div>
+<div class="price">5 ml: R$ 19,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Essenza%20Nobile%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+<!-- Me and I -->
+<article class="perfume-card">
+<img class="card-img" src="https://cdn.awsli.com.br/600x450/1716/1716345/produto/290664699/me_and_i-removebg-preview-v5ly6ms0qf.png" alt="Me and I">
+<div class="card-body">
+<h2>Me and I (In The Box)</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 8,50</div>
+<div class="price">5 ml: R$ 18,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Me%20and%20I%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+<!-- Homem Dom -->
+<article class="perfume-card">
+<img class="card-img" src="https://production.na01.natura.com/on/demandware.static/-/Sites-natura-br-storefront-catalog/default/dw035424b3/Produtos/PRODUTO/NATBRA-71770_1.jpg" alt="Homem Dom">
+<div class="card-body">
+<h2>Homem Dom</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 10,00</div>
+<div class="price">5 ml: R$ 22,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Homem%20Dom%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+<!-- Sultan Al Lail -->
+<article class="perfume-card">
+<img class="card-img" src="https://www.giraofertas.com.br/wp-content/uploads/2023/10/Sultan-Al-Lail-Al-Wataniah-Eau-de-Parfum-Masculino-03.jpg" alt="Sultan Al Lail">
+<div class="card-body">
+<h2>Sultan Al Lail</h2>
+<div class="price-row">
+<div class="price">2 ml: R$ 11,00</div>
+<div class="price">5 ml: R$ 24,00</div>
+</div>
+<a class="btn-whatsapp small" href="https://wa.me/5584991358021?text=Quero%20comprar%20Sultan%20Al%20Lail%20-%202ml%20ou%205ml" target="_blank">Comprar no WhatsApp (Mateus)</a>
+</div>
+</article>
+
+</section>
+</main>
+
+<footer>
+<div class="bottom-footer">© 2025 Decantes Mattoir | Contato via WhatsApp (Mateus)</div>
+</footer>
+
+</body>
+</html>
